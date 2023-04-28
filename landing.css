@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-login, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.viewport-login{
+    display: flex;
+    justify-content: center;
+    padding: 80px;
+    gap: 12em;
+    width: 855px;
+}
+.left-login{
+    width: 35vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.textfield{
+    height: 60px;
+    width: 355px;
+    display: flex;
+    flex-direction: column;
+}
+.textfield > input{
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    border: none;
+    padding: 15px;
+    background:#1f1f1f;
+    color: #fff;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+.btn-login{
+    background-image: linear-gradient(to right, #66ffad, #e4ffad, #ffe6ad);
+    height: 60px;
+    border-radius: 6px;
+    border: none;
+    text-align: start;
+    padding: 15px;
+    font-size: 12pt;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-login:hover{
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #40e495, #66ffad, #fff6aa);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    font-size: 12.2pt;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header > h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+.header > p{
+    color: #a9a9a9;
+    text-align-last: center;
+
+}
+.rigth-login{
+    width: 35vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.btn-sign-in{
+    background-color: #0f0f0f;
+    height: 31px;
+    text-align: start;
+    padding: 15px;
+    font-size: 12pt;
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+}
+.border-gradient{
+    background: linear-gradient(#0f0f0f, #0f0f0f) padding-box, linear-gradient(to right, #40e495, #66ffad, #fff6aa) border-box;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	position: relative;
+	display: inline-flex;
+	text-decoration: none;
+	cursor: pointer;
+}
+.btn-sign-in:hover{
+    font-size: 12.1pt;
+    transition: all 1s ease;
+}
+.btn-sign-in > a{
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn-sign-in > a:hover{
+    color: #dcdcdc;
+    text-decoration: underline;
+}
+.google:hover{
+    background: linear-gradient(#0f0f0f, #0f0f0f) padding-box, linear-gradient(to right, #4285f4, #0f9d58, #f48460, #db4437) border-box;
+
+}
+.facebook:hover{
+    background: linear-gradient(#0f0f0f, #0f0f0f) padding-box, linear-gradient(to right, #3b5998, #4c6999, white) border-box;
+
+}
+.apple:hover{
+    background: linear-gradient(#0f0f0f, #0f0f0f) padding-box, linear-gradient(to right, #c0c0c0, #d3d3d3, white) border-box;
+
+}
+.link-forgot{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: auto;
+}
+.link-forgot > a{
+    color: #c0c0c0;
+    text-decoration: none;
+}
+.link-forgot > a:hover{
+    color: #d3d3d3;
+    text-decoration: underline;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #2f2f2f;
+    
+}
+
+@media (max-width: 713px) {
+    .viewport-login{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 50px 160px;
+        width: 500px;
+        
+        gap: 2rem;
+    }
+    .rigth-login > .btn-sign-in{
+        width: 326px;
+    }
+}
+
+@media (max-width: 412px){
+    .main-login{
+        width: 816px;
+        height: 800px;
+    }
+
+    .viewport-login{
+    }
+}
